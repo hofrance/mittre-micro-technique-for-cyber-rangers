@@ -1,6 +1,4 @@
-Ran tool
 
-```
 # MITRE ATT&CK Micro-Techniques Repository
 
 This repository contains atomic implementations of MITRE ATT&CK techniques, decomposed into micro-techniques for precise adversarial behavior simulation and cybersecurity training.
@@ -202,6 +200,3 @@ This project follows strict standards for:
 - Security-first implementation
 - Academic reproducibility
 - Cross-platform compatibility
-
-Contributions should maintain these standards and include comprehensive testing.
-```
