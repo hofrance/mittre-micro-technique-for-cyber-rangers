@@ -1,0 +1,21 @@
+[package]
+name = "t1115_002a_clipboard_data_wayland_clipboard_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for t1115.002a in collection category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "collection", "t1115.002a", "clipboard-data-wayland-clipboard", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

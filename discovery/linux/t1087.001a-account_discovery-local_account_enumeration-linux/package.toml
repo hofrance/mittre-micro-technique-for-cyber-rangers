@@ -1,0 +1,21 @@
+[package]
+name = "t1087_001a_account_discovery_local_account_enumeration_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for t1087.001a in discovery category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "discovery", "t1087.001a", "account-discovery-local-account-enumeration", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

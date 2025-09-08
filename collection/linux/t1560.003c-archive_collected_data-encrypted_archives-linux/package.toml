@@ -1,0 +1,21 @@
+[package]
+name = "t1560_003c_archive_collected_data_encrypted_archives_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for t1560.003c in collection category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "collection", "t1560.003c", "archive-collected-data-encrypted-archives", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

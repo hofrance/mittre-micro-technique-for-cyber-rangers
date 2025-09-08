@@ -1,0 +1,21 @@
+[package]
+name = "t1123_004a_audio_capture_system_audio_capture_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for t1123.004a in collection category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "collection", "t1123.004a", "audio-capture-system-audio-capture", "admin"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = "/tmp/mitre_results/${PACKAGE_NAME}.sh"
+restarts = false

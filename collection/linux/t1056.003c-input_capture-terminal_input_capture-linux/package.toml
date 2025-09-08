@@ -1,0 +1,21 @@
+[package]
+name = "t1056_003c_input_capture_terminal_input_capture_linux"
+version = "0.1.0"
+description = "Input capture and keystroke logging for t1056.003c"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "collection", "t1056.003c", "input-capture", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

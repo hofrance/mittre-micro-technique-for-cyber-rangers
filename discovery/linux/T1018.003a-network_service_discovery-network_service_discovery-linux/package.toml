@@ -1,0 +1,21 @@
+[package]
+name = "T1018_003a_network_service_discovery_network_service_discovery_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for T1018.003a in discovery category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "discovery", "T1018.003a", "network-service-discovery-network-service-discovery", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

@@ -1,0 +1,21 @@
+[package]
+name = "t1046_001a_network_service_discovery_port_scanning_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for t1046.001a in discovery category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "discovery", "t1046.001a", "network-service-discovery-port-scanning", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

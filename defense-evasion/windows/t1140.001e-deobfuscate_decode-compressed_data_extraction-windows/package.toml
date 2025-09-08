@@ -1,0 +1,21 @@
+[package]
+name = "t1140_001e_deobfuscate_decode_compressed_data_extraction_windows"
+version = "0.1.0"
+description = "Advanced technique implementation for t1140.001e in defense-evasion category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "windows", "defense-evasion", "t1140.001e", "email-extraction", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.ps1", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.ps1"]}
+]
+
+[inject]
+action = ""
+restarts = false

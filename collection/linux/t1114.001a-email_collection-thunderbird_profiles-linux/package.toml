@@ -1,0 +1,21 @@
+[package]
+name = "t1114_001a_email_collection_thunderbird_profiles_linux"
+version = "0.1.0"
+description = "Email data collection and analysis using t1114.001a"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "collection", "t1114.001a", "data-harvesting", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = "/tmp/mitre_results/${PACKAGE_NAME}.sh"
+restarts = false

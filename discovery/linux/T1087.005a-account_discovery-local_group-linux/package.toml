@@ -1,0 +1,21 @@
+[package]
+name = "T1087_005a_account_discovery_local_group_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for T1087.005a in discovery category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "discovery", "T1087.005a", "account-discovery-local-group", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

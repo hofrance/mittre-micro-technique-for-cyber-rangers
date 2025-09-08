@@ -1,0 +1,21 @@
+[package]
+name = "t1119_004a_automated_collection_running_processes_dump_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for t1119.004a in collection category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "collection", "t1119.004a", "automated-collection-running-processes-dump", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

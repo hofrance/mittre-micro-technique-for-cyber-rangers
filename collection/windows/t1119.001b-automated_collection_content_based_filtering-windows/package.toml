@@ -1,0 +1,21 @@
+[package]
+name = "t1119_002a_automated_collection_b_content_based_filtering_windows"
+version = "0.1.0"
+description = "Advanced technique implementation for t1119.001b in collection category"
+authors = ["BANKOUEZI richard <contact@richard-hofrance.com>]
+license = "MIT"
+categories = ["MITRE ATT&CK", "windows", "collection", "t1119.001b", "automated-collection-content-based-filtering", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.ps1", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.ps1"]}
+]
+
+[inject]
+action=""
+restarts = false

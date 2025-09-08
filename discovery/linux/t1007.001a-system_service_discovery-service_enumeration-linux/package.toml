@@ -1,0 +1,21 @@
+[package]
+name = "t1007_001a_system_service_discovery_service_enumeration_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for t1007.001a in discovery category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "discovery", "t1007.001a", "system-service-discovery-service-enumeration", "admin"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

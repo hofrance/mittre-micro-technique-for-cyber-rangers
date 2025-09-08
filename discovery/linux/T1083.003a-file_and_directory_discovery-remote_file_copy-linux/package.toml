@@ -1,0 +1,21 @@
+[package]
+name = "T1083_003a_file_and_directory_discovery_remote_file_copy_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for T1083.003a in discovery category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "discovery", "T1083.003a", "file-and-directory-discovery-remote-file-copy", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

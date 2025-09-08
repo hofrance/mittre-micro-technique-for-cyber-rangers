@@ -1,0 +1,21 @@
+[package]
+name = "t1005_009i_data_from_local_system_wifi_passwords_linux"
+version = "0.1.0"
+description = "Data harvesting from local system sources for t1005.009i"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "collection", "t1005.009i", "data-harvesting", "admin"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = "/tmp/mitre_results/${PACKAGE_NAME}.sh"
+restarts = false

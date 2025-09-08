@@ -1,0 +1,23 @@
+[package]
+name = "t1114_002a_email_collection_b_email_extraction_windows"
+version = "0.1.0"
+
+description = "MITRE email_collection email_extraction for windows"
+
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+categories = ["MITRE ATT&CK", "windows", "collection", "t1114.001b", "email-extraction", "user"]
+
+readme = "README.md"
+license = "MIT"
+assets = [
+    ["src/main.ps1", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.ps1"]}
+]
+
+[inject]
+action = ""
+restarts = false

@@ -1,0 +1,21 @@
+[package]
+name = "t1114_005d_email_collection_imap_ports_info_linux"
+version = "0.1.0"
+description = "Email data collection and analysis using t1114.005d"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "collection", "t1114.005d", "email-collection", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

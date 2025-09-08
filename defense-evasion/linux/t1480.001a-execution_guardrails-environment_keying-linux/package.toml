@@ -1,0 +1,21 @@
+[package]
+name = "t1480_001a_execution_guardrails_environment_keying_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for t1480.001a in defense-evasion category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "defense-evasion", "t1480.001a", "execution-guardrails-environment-keying", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

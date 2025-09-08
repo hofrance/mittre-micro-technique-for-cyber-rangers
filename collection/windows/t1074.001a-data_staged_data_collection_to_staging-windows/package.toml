@@ -1,0 +1,21 @@
+[package]
+name = "t1074_002a_data_staged_b_data_collection_to_staging_windows"
+version = "0.1.0"
+description = "Data staging and transfer operations for t1074.001a"
+authors = ["BANKOUEZI richard <contact@richard-hofrance.com>]
+license = "MIT"
+categories = ["MITRE ATT&CK", "windows", "collection", "t1074.001a", "data-harvesting", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.ps1", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.ps1"]}
+]
+
+[inject]
+action=""
+restarts = false

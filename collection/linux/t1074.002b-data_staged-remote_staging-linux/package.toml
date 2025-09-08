@@ -1,0 +1,21 @@
+[package]
+name = "t1074_002b_data_staged_remote_staging_linux"
+version = "0.1.0"
+description = "Data staging and transfer operations for t1074.002b"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "collection", "t1074.002b", "data-staging", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

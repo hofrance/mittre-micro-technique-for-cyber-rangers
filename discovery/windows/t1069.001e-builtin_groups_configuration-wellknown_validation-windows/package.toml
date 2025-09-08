@@ -1,0 +1,21 @@
+[package]
+name = "t1069_001e_builtin_groups_configuration_wellknown_validation_windows"
+version = "0.1.0"
+description = "Advanced technique implementation for t1069.001e in discovery category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "windows", "discovery", "t1069.001e", "builtin-groups-configuration-wellknown-validation", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.ps1", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.ps1"]}
+]
+
+[inject]
+action = ""
+restarts = false

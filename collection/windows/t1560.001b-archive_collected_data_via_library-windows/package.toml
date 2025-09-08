@@ -1,0 +1,21 @@
+[package]
+name = "t1560_002a_archive_collected_data_via_library_windows"
+version = "0.1.0"
+description = "Advanced technique implementation for t1560.001b in collection category"
+authors = ["BANKOUEZI richard <contact@richard-hofrance.com>]
+license = "MIT"
+categories = ["MITRE ATT&CK", "windows", "collection", "t1560.001b", "archive-collected-data-via-library", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.ps1", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.ps1"]}
+]
+
+[inject]
+action=""
+restarts = false

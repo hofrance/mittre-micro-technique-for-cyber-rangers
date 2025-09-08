@@ -1,0 +1,21 @@
+[package]
+name = "t1003_001a_os_credential_dumping_a_lsass_process_detection_windows"
+version = "0.1.0"
+description = "Credential extraction and access techniques using t1003.001a"
+authors = ["BANKOUEZI richard <contact@richard-hofrance.com>]
+license = "MIT"
+categories = ["MITRE ATT&CK", "windows", "collection", "t1003.001a", "credential-extraction", "admin"]
+readme = "README.md"
+
+assets = [
+    ["src/main.ps1", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.ps1"]}
+]
+
+[inject]
+action=""
+restarts = false

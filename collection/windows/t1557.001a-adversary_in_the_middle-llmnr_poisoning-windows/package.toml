@@ -1,0 +1,22 @@
+[package]
+name = "t1557_001a_adversary_in_the_middle_llmnr_poisoning_windows"
+version = "0.1.0"
+description = "MITRE adversary_in_the_middle llmnr_poisoning for windows"
+authors = ["BANKOUEZI Richard <contact@richard-hofrance.com>"]
+license = "MIT"
+categories = ["MITRE ATT&CK", "windows", "collection", "t1557.001a", "adversary-in-the-middle-llmnr-poisoning", "user"]
+
+readme = "README.md"
+edition = "2024"
+assets = [
+    ["src/main.ps1", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.ps1"]}
+]
+
+[inject]
+action = "/tmp/mitre_results/${PACKAGE_NAME}.ps1"
+restarts = false

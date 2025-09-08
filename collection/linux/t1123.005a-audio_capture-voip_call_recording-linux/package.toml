@@ -1,0 +1,21 @@
+[package]
+name = "t1123_005a_audio_capture_voip_call_recording_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for t1123.005a in collection category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "collection", "t1123.005a", "audio-capture-voip-call-recording", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

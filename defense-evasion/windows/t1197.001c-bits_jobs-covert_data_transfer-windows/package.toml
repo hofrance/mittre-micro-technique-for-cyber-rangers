@@ -1,0 +1,21 @@
+[package]
+name = "t1197_001c_bits_jobs_covert_data_transfer_windows"
+version = "0.1.0"
+description = "Advanced technique implementation for t1197.001c in defense-evasion category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "windows", "defense-evasion", "t1197.001c", "bits-jobs-covert-data-transfer", "admin"]
+readme = "README.md"
+
+assets = [
+    ["src/main.ps1", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.ps1"]}
+]
+
+[inject]
+action = ""
+restarts = false

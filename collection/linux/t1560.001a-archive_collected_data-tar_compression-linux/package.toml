@@ -1,0 +1,21 @@
+[package]
+name = "t1560_001a_archive_collected_data_tar_compression_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for t1560.001a in collection category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "collection", "t1560.001a", "archive-collected-data-tar-compression", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

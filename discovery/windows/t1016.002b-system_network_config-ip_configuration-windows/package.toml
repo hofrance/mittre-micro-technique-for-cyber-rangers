@@ -1,0 +1,21 @@
+[package]
+name = "t1016_002b_system_network_config_ip_configuration_windows"
+version = "0.1.0"
+description = "Advanced technique implementation for t1016.002b in discovery category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "windows", "discovery", "t1016.002b", "system-network-config-ip-configuration", "admin"]
+readme = "README.md"
+
+assets = [
+    ["src/main.ps1", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.ps1"]}
+]
+
+[inject]
+action = ""
+restarts = false

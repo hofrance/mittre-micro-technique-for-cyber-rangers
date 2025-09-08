@@ -1,0 +1,21 @@
+[package]
+name = "t1595.001a-scanning_ip_blocks-stealth_syn_scan-linux"
+version = "1.0.0"
+description = "Micro-technique for stealth network reconnaissance using stealth scanning"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "reconnaissance", "t1595.001a", "network-scanning", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = "/tmp/mitre_results/${PACKAGE_NAME}.sh"
+restarts = false

@@ -1,0 +1,21 @@
+[package]
+name = "t1562_001c_impair_defenses_disable_behavior_monitoring_windows"
+version = "0.1.0"
+description = "Advanced technique implementation for t1562.001c in defense-evasion category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "windows", "defense-evasion", "t1562.001c", "impair-defenses-disable-behavior-monitoring", "admin"]
+readme = "README.md"
+
+assets = [
+    ["src/main.ps1", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.ps1"]}
+]
+
+[inject]
+action = ""
+restarts = false

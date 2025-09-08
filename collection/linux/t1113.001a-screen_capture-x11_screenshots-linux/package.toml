@@ -1,0 +1,21 @@
+[package]
+name = "t1113_001a_screen_capture_x11_screenshots_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for t1113.001a in collection category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "collection", "t1113.001a", "screen-capture-x11-screenshots", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

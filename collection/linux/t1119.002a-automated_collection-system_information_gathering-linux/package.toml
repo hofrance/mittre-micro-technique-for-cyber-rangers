@@ -1,0 +1,21 @@
+[package]
+name = "t1119_002a_automated_collection_system_information_gathering_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for t1119.002a in collection category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "collection", "t1119.002a", "automated-collection-system-information-gathering", "admin"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

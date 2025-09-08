@@ -1,0 +1,87 @@
+# T1114.002B - Extract Evolution Mail Cache Files
+
+## Description
+This package implements MITRE ATT&CK atomic micro-technique T1114.002B for Linux environments. Extract Evolution mail cache files from user directories.
+
+## Technique Details
+- **ID**: T1114.002B
+- **Name**: Extract Evolution Mail Cache Files
+- **Parent Technique**: T1114
+- **Tactic**: TA0009 - Collection
+- **Platform**: Linux
+- **Permissions Required**: **User**
+
+## Manual Execution
+```bash
+export T1114_002B_OUTPUT_BASE="/tmp/mitre_results" && export T1114_002B_SILENT_MODE=false
+chmod +x src/main.sh && ./src/main.sh
+```
+
+## Atomic Action
+**Single Observable Action**: extract Evolution mail cache files ONLY
+- Scope: One specific collection action
+- Dependency: Bash + Evolution cache access
+- Privilege: User
+
+## Environment Variables
+- `T1114_002B_CACHE_PATTERNS`: Configuration parameter (default: *.cache,*.tmp,*.db)
+- `T1114_002B_EVOLUTION_CACHE_PATHS`: Configuration parameter (default: /home/*/.cache/evolution,/home/*/.evolution/cache)
+- `T1114_002B_EXCLUDE_EMPTY`: Configuration parameter [true/false] (default: true)
+- `T1114_002B_INCLUDE_TEMP`: Configuration parameter [true/false] (default: true)
+- `T1114_002B_MAX_FILES`: Maximum number of files to process (default: 200)
+- `T1114_002B_MAX_FILE_SIZE`: Maximum file size to process (default: 52428800)
+- `T1114_002B_OUTPUT_BASE`: Base directory for results (default: /tmp/mitre_results)
+- `T1114_002B_OUTPUT_MODE`: Output mode [simple/debug/stealth/none] (default: simple)
+- `T1114_002B_SILENT_MODE`: Enable silent execution [true/false] (default: false)
+- `T1114_002B_TIMEOUT`: Timeout in seconds (default: 300)
+
+### Universal Variables
+- `T1114_002B_T1114_002B_OUTPUT_BASE`: Base directory for results (default: "/tmp/mitre_results")
+- `T1114_002B_T1114_002B_TIMEOUT`: Execution timeout in seconds (default: 300)
+- `MAX_FILES`: Maximum number of files to process (default: varies)
+
+### T1114.002B Specific Variables
+- `T1114_002B_EVOLUTION_CACHE_PATHS`: Evolution cache paths to scan (default: "$HOME/.cache/evolution")
+- `T1114_002B_CACHE_TYPES`: Cache file types (default: "*.db,*.cache,*.tmp")
+- `T1114_002B_MAX_CACHE_SIZE`: Maximum cache file size bytes (default: 1048576)
+- `T1114_002B_INCLUDE_SUBDIRS`: Include subdirectories [true/false] (default: true)
+- `T1114_002B_FILTER_SENSITIVE`: Filter sensitive cache data [true/false] (default: false)
+- `T1114_002B_EXCLUDE_TEMP`: Exclude temporary files [true/false] (default: true)
+- `T1114_002B_T1114_002B_OUTPUT_MODE`: Output mode simple/debug/stealth (default: "simple")
+- `T1114_002B_STEALTH_MODE`: Enable stealth operation (default: false)
+- `T1114_002B_T1114_002B_SILENT_MODE`: Enable silent execution [true/false] (default: false)
+
+## System Requirements
+- **Linux Distributions**: Ubuntu/Debian, RHEL/CentOS/Rocky, Fedora, openSUSE, Arch (95%+ compatibility)
+- **Bash**: Version 4.0+ (standard on all modern distributions)
+- **Core Utilities**: find, stat, grep, awk, sed (pre-installed on all distributions)
+- **Evolution**: Mail client cache files must exist
+- **Permissions**: Appropriate access to target resources
+
+## Dependencies
+- **Universal**: bash, coreutils (find, stat, cat, grep)
+- **Technique-specific**: Evolution mail client cache files
+- **Package managers**: Not required (no installation needed)
+
+**Note:** If dependencies are missing, you'll see:
+```bash
+# [ERROR] Missing dependency: <tool_name>
+```
+
+## Output Files
+- `t1114_002b_evolution_cache_collection.json`: Collection results with metadata
+
+## Core Functionality
+- Get-Configuration: Load ultra-granular configuration
+- Initialize-OutputStructure: Create atomic output structure
+- Invoke-MicroTechniqueAction: Execute atomic action ONLY
+- Write-StandardizedOutput: Triple-mode output (simple/debug/stealth)
+- Main: Orchestrate execution with graceful error handling
+
+## Micro-Technique Family
+**Email Collection Family (T1114.001A→T1114.006A)**
+
+## MITRE ATT&CK Reference
+- **Technique**: T1114 - Email Collection
+- **Sub-technique**: T1114.002 - Email Collection: Email Collection
+- **URL**: https://attack.mitre.org/techniques/T1114/002/

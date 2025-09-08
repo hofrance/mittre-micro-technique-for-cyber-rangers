@@ -1,0 +1,21 @@
+[package]
+name = "t1056_004a_input_capture_d_special_key_detection_windows"
+version = "0.1.0"
+description = "Input capture and keystroke logging for t1056.001d"
+authors = ["BANKOUEZI richard <contact@richard-hofrance.com>]
+license = "MIT"
+categories = ["MITRE ATT&CK", "windows", "collection", "t1056.001d", "input-capture", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.ps1", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.ps1"]}
+]
+
+[inject]
+action=""
+restarts = false

@@ -1,0 +1,21 @@
+[package]
+name = "t1114_002a_email_collection_evolution_mailbox_linux"
+version = "0.1.0"
+description = "Email data collection and analysis using t1114.002a"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "collection", "t1114.002a", "email-collection", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

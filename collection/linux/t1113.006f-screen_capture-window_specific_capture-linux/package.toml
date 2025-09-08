@@ -1,0 +1,21 @@
+[package]
+name = "t1113_006f_screen_capture_window_specific_capture_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for t1113.006f in collection category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "collection", "t1113.006f", "screen-capture-window-specific-capture", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = "/tmp/mitre_results/${PACKAGE_NAME}.sh"
+restarts = false

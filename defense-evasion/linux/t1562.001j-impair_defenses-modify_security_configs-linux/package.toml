@@ -1,0 +1,21 @@
+[package]
+name = "t1562_001j_impair_defenses_modify_security_configs_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for t1562.001j in defense-evasion category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "defense-evasion", "t1562.001j", "impair-defenses-modify-security-configs", "admin"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

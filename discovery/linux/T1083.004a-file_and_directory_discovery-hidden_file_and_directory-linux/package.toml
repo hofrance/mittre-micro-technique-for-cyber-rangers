@@ -1,0 +1,21 @@
+[package]
+name = "T1083_004a_file_and_directory_discovery_hidden_file_and_directory_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for T1083.004a in discovery category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "discovery", "T1083.004a", "file-and-directory-discovery-hidden-file-and-directory", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

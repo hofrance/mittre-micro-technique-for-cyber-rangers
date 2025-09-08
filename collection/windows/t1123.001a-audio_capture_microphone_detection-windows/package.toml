@@ -1,0 +1,21 @@
+[package]
+name = "t1123_001a_audio_capture_a_microphone_detection_windows"
+version = "0.1.0"
+description = "Advanced technique implementation for t1123.001a in collection category"
+authors = ["BANKOUEZI richard <contact@richard-hofrance.com>]
+license = "MIT"
+categories = ["MITRE ATT&CK", "windows", "collection", "t1123.001a", "audio-capture-microphone-detection", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.ps1", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.ps1"]}
+]
+
+[inject]
+action=""
+restarts = false

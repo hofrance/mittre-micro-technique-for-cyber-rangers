@@ -1,0 +1,21 @@
+[package]
+name = "T1057_005a_password_policy_discovery_password_policy_discovery_linux"
+version = "0.1.0"
+description = "Advanced technique implementation for T1057.005a in discovery category"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "discovery", "T1057.005a", "password-policy-discovery-password-policy-discovery", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false

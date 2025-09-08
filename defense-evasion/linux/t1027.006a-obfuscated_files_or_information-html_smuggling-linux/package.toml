@@ -1,0 +1,21 @@
+[package]
+name = "t1027_006a_obfuscated_files_or_information_html_smuggling_linux"
+version = "0.1.0"
+description = "Binary file obfuscation and evasion techniques for t1027.006a"
+authors = ["BANKOUEZI  Richard   <contact@richard-hofrance.com> "]
+license = "MIT"
+categories = ["MITRE ATT&CK", "linux", "defense-evasion", "t1027.006a", "obfuscated-files-or-information-html-smuggling", "user"]
+readme = "README.md"
+
+assets = [
+    ["src/main.sh", "/tmp/mitre_results", "755"],
+]
+[content]
+type = "inject"
+preview = [
+    {type = "code", value = ["src/main.sh"]}
+]
+
+[inject]
+action = ""
+restarts = false
